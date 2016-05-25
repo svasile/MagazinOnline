@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MagazinOnline.UI.App_Start.NinjectWebCommon">
+    <Position X="4.5" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>BAACAAAQACAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\NinjectWebCommon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MagazinOnline.UI.RouteConfig">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\RouteConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MagazinOnline.UI.MvcApplication">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Global.asax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MagazinOnline.UI.Controllers.AdminController">
+    <Position X="2.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAACAAAAAAAABAAAAAAAAEAAACAAAA=</HashCode>
+      <FileName>Controllers\AdminController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MagazinOnline.UI.Controllers.ContController">
+    <Position X="2.25" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAIAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Controllers\ContController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MagazinOnline.UI.Controllers.CosController">
+    <Position X="8.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAACAAAAAAAAAAAAgABAAAAAAAAEAkAAAAAA=</HashCode>
+      <FileName>Controllers\CosController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MagazinOnline.UI.Controllers.NavController">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Controllers\NavController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MagazinOnline.UI.Controllers.ProdusController">
+    <Position X="6.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Controllers\ProdusController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MagazinOnline.UI.HtmlAjutoare.AjutorPaginare">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HtmlAjutoare\AjutorPaginare.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MagazinOnline.UI.Legaturi.CosLegatura" BaseTypeListCollapsed="true">
+    <Position X="9" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Legaturi\CosLegatura.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MagazinOnline.UI.Models.CosIndex">
+    <Position X="6.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Models\CosIndex.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MagazinOnline.UI.Models.InfoPaginare">
+    <Position X="4.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwBAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\InfoPaginare.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MagazinOnline.UI.Models.ListaProduse">
+    <Position X="6.5" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAgAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ListaProduse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MagazinOnline.UI.Models.LogareModel">
+    <Position X="2.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Models\LogareModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

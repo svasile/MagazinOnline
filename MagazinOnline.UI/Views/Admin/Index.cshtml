@@ -1,0 +1,43 @@
+﻿@model IEnumerable<MagazinOnline.Domeniu.Entitati.Produs>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div>Toate produsele</div>
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped table-condensed table-bordered">
+            <tr>
+                <th class="text-right">ID</th>
+                <th>Denumire</th>
+                <th class="text-right">Preţ</th>
+                <th class="text-center">Acţiune</th>
+            </tr>
+            @foreach(var articol in Model)
+            {
+                <tr>
+                    <td class="text-right">@articol.ProdusID</td>
+                    <td>
+                        @Html.ActionLink(articol.Denumire,"Modifica", new { articol.ProdusID})
+                    </td>
+                    <td class="text-right">@articol.Pret.ToString("c")</td>
+                    <td class="text-center">
+                        @using (Html.BeginForm("Sterge", "Admin"))
+                        {
+                            @Html.Hidden("ProdusID",articol.ProdusID)
+                            <input type="submit"class="btn btn-default btn-xs"value="Şterge"/>
+                        }
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+    <div class="panel-footer">
+        @Html.ActionLink("Adaugă un articol nou", "Adauga",
+                    null, new { @class = "btn btn-default" })
+    </div>
+</div>

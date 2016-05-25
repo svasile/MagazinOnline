@@ -1,0 +1,43 @@
+﻿@model MagazinOnline.Domeniu.Entitati.DetaliiCumparaturi
+
+@{ 
+    ViewBag.Title = "Magazin online: Verifică";
+}
+<h2>Comanda</h2>
+<p>Vă rugăm să introduceţi datele de contact şi vă vom expedia bunurile de îndată!</p>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+    <h3>Cumpărător</h3>
+    <div class="form-group">
+        <label>Numele:</label>
+        @Html.TextBoxFor(x => x.Numele, new { @class="form-control"})
+    </div>
+    <h3>Adresa</h3>
+    foreach(var proprietate in ViewData.ModelMetadata.Properties)
+    {
+        if(proprietate.PropertyName != "Numele" && proprietate.PropertyName !="Cadou")
+        {
+            <div class="form-group">
+                <label>
+                    @(proprietate.DisplayName??proprietate.PropertyName)
+                </label>
+                @Html.TextBox(proprietate.PropertyName, null,
+               new
+               {
+                   @class="form-control"
+               })
+            </div>
+        }
+    }
+    <h3>Opţiune:</h3>
+    <div class="checkbox">
+        <label>
+            @Html.EditorFor(x=>x.Cadou)
+            Doriţi împachetarea ca şi cadou?
+        </label>
+    </div>
+    <div class="text-center">
+        <input class="btn btn-primary" type="submit" value="Finalizează comanda"/>
+    </div>
+}

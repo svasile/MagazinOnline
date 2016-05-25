@@ -1,0 +1,55 @@
+﻿@model MagazinOnline.UI.Models.CosIndex
+
+<style>
+    #cartTable td{vertical-align:middle;}
+</style>
+@{ 
+    ViewBag.Title = "Magazin: Coşul de cumpărături";
+}
+<h2>Coşul meu cu cumpărături</h2>
+<table id="cartTable" class="table">
+    <thead>
+        <tr>
+            <th>Cantitate</th>
+            <th>Articol</th>
+            <th class="text-right">Preţ/buc</th>
+            <th class="text-right">Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var line in Model.Cos.rand)
+        {
+            <tr>
+                <td class="text-left">@line.Cantitate</td>
+                <td class="text-left">@line.Produs.Denumire</td>
+                <td class="text-right">
+                    @line.Produs.Pret.ToString("c")
+                </td>
+                <td class="text-right">
+                    @((line.Cantitate*line.Produs.Pret).ToString("c"))
+                </td>
+                <td>
+                    @using (Html.BeginForm("StergeDinCos", "Cos"))
+                    {
+                        @Html.Hidden("ProdusID",line.Produs.ProdusID)
+                        @Html.HiddenFor(x=>x.ReturnUrl)
+                        <input class="btn btn-sm btn-warning"
+                               type="submit" value="Şterge"/>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3" class="text-right">Total general</td>
+            <td class="text-right">
+                @Model.Cos.CalculareValoareTotala().ToString("c")
+            </td>
+        </tr>
+    </tfoot>
+</table>
+<div class="text-center">
+    <a class="btn btn-primary" href="@Model.ReturnUrl">Continuă cumpărăturile</a>
+    @Html.ActionLink("Comandă acum", "Verifica", null, new { @class="btn btn-primary"})
+</div>

@@ -1,0 +1,15 @@
+﻿@model MagazinOnline.UI.Models.ListaProduse
+
+@{
+    ViewBag.Title = "Produse";
+}
+
+@foreach(var p in Model.Produse)
+{
+    @Html.Partial("DetaliuProdus",p)
+}
+<div class="btn-group pull-right">
+    @Html.LinkPagina(Model.InfoPaginare, x => Url.Action("List", 
+    new {pagina = x,categoria=Model.CategoriaCurenta}))
+</div>
+

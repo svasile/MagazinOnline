@@ -1,0 +1,33 @@
+﻿@{ 
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+    <div>
+        @if(TempData["mesaj"]!=null)
+        {
+            <div class="alert alert-success">@TempData["mesaj"]</div>
+        }
+        @{
+            var utilizator = HttpContext.Current.User.Identity.Name;
+            if (utilizator !="")
+            {
+                <h3>@Html.ActionLink("Magazin Online","List","Produs")
+                    <span class="btn btn-info pull-right">
+                        @Html.ActionLink(utilizator + " - Delogare", "Logout", "Cont")
+                    </span>
+                </h3>
+            }
+        }     
+        @RenderBody()
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+﻿@model MagazinOnline.Domeniu.Entitati.Produs
+
+<div class="well">
+    <h3>
+        <strong>@Model.Denumire</strong>
+        <span class="pull-right label label-primary">@Model.Pret.ToString("c")</span>
+    </h3>
+    @using (Html.BeginForm("PuneInCos", "Cos"))
+    {
+        <div class="pull-right">
+            @Html.HiddenFor(x=>x.ProdusID)
+            @Html.Hidden("returnUrl", Request.Url.PathAndQuery)
+            <input type="submit"class="btn btn-success" value="Pune în coş"/>
+        </div>
+    }
+    <span class="lead">@Model.Descriere</span>
+</div>

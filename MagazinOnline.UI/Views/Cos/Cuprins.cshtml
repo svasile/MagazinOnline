@@ -1,0 +1,12 @@
+﻿@model MagazinOnline.Domeniu.Entitati.Cos
+
+<div class="navbar-right">
+    @Html.ActionLink("Verifica","Index","Cos",
+    new { returnUrl=Request.Url.PathAndQuery},
+    new { @class="btn btn-default navbar-btn"})
+</div>
+<div class="navbar-text navbar-right">
+    <b>Coşul meu</b>
+    @Model.rand.Sum(x=>x.Cantitate) Articol(e),
+    @Model.CalculareValoareTotala().ToString("c")
+</div>

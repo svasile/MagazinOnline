@@ -1,0 +1,30 @@
+﻿@model MagazinOnline.UI.Models.LogareModel
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3>Logare</h3>
+    </div>
+    <div class="panel-body">
+        <p class="lead">
+            Pentru accesarea zonei administrative vă rog să va logaţi:
+        </p>
+        @using (Html.BeginForm())
+        {
+            @Html.ValidationSummary()
+            <div class="form-group">
+                <label>Utilizator:</label>
+                @Html.TextBoxFor(m => m.Utilizator, new { @class="form-control"})
+            </div>
+            <div class="form-group">
+                <label>Parola:</label>
+                @Html.PasswordFor(m=>m.Parola, new { @class = "form-control" })
+            </div>
+            <input type="submit"class="btn btn-primary"value="Logare"/>
+        }
+    </div>
+</div>

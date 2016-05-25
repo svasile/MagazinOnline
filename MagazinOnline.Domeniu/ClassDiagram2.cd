@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="NameAndType">
+  <Class Name="MagazinOnline.Domeniu.Concret.AutentificareFormulare" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAACAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Concret\AutentificareFormulare.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MagazinOnline.Domeniu.Concret.EFDbContext">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Concret\EFDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MagazinOnline.Domeniu.Concret.EFDepozitProduse" BaseTypeListCollapsed="true">
+    <Position X="3" Y="2.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>BAACAAAAAAAAAAAAAAAAAAAAAAgAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Concret\EFDepozitProduse.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MagazinOnline.Domeniu.Concret.EmailProcesorComanda" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="4.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAAAAAAA=</HashCode>
+      <FileName>Concret\EmailProcesorComanda.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MagazinOnline.Domeniu.Concret.SetariEmail">
+    <Position X="10.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAEAAAAAAQCAAIAAAAAAAABAIAAAAAAAA=</HashCode>
+      <FileName>Concret\SetariEmail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MagazinOnline.Domeniu.Entitati.Cos">
+    <Position X="7.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAgIAAAAAAAgAAAAAAIAAAAAAAAQAA=</HashCode>
+      <FileName>Entitati\Cos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MagazinOnline.Domeniu.Entitati.CosCoada">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entitati\CosCoada.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MagazinOnline.Domeniu.Entitati.DetaliiCumparaturi">
+    <Position X="5.75" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAYAAAAAAAAAAEAAAAAAAAAAAANAAAUAAAAAAAAAA=</HashCode>
+      <FileName>Entitati\DetaliiCumparaturi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MagazinOnline.Domeniu.Entitati.Produs">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAgAAAAAAAAAAAAABQCAAAAAAAAAAA=</HashCode>
+      <FileName>Entitati\Produs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MagazinOnline.Domeniu.Entitati.Utilizator">
+    <Position X="0.5" Y="4.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAE=</HashCode>
+      <FileName>Entitati\Utilizator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MagazinOnline.Domeniu.Migrations.Configuration">
+    <Position X="3" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Migrations\Configuration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="MagazinOnline.Domeniu.Abstract.IAutentificare">
+    <Position X="0.5" Y="5.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Abstract\IAutentificare.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MagazinOnline.Domeniu.Abstract.IDepozitProduse">
+    <Position X="3" Y="4.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAgAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Abstract\IDepozitProduse.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MagazinOnline.Domeniu.Abstract.IProcesareComanda">
+    <Position X="7.75" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Abstract\IProcesareComanda.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
