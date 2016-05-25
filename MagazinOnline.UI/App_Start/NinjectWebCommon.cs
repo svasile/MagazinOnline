@@ -10,6 +10,8 @@ namespace MagazinOnline.UI.App_Start
 
     using Ninject;
     using Ninject.Web.Common;
+    using Domeniu.Abstract;
+    using Domeniu.Concret;
 
     public static class NinjectWebCommon 
     {
@@ -61,6 +63,9 @@ namespace MagazinOnline.UI.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
+            kernel.Bind<IDepozitProduse>().To<EFDepozitProduse>();
+            kernel.Bind<IProcesareComanda>().To<EmailProcesorComanda>();
+            kernel.Bind<IAutentificare>().To<AutentificareFormulare>();
         }        
     }
 }
